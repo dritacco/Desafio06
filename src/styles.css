@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+html h1, html h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+html h1 {
+  font-size: 1.5rem;
+}
+html h2 {
+  font-size: 1.2em;
+}
+html p {
+  font-size: 0.8rem;
+}
+
+/* // Header */
+.Header {
+  background-image: url("../public/images/bg-hero-desktop.svg");
+}
+.Header section article {
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");
+  /* // Navbar */
+}
+.Header section article .navbar {
+  width: 100%;
+  height: 15vh;
+  padding: 3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header section article .navbar .button {
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 1px 6px rgb(221, 219, 219);
+  padding: 0.5rem 2rem;
+}
+.Header section article .navbar .button:hover {
+  cursor: pointer;
+  color: hsl(208, 11%, 55%);
+}
+.Header .Hinfo {
+  padding: 0 3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.Header .Hinfo article {
+  width: 50vw;
+}
+.Header .Hinfo .button {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 15px;
+  box-shadow: 0 1px 6px rgb(221, 219, 219);
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
+}
+.Header .Hinfo .button:hover {
+  cursor: pointer;
+  background-color: rgb(241, 160, 216);
+}
+
+.Main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.Main .section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.Main .section .article {
+  flex: 1;
+  max-width: 1260px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 1px 1px 8px hsl(208, 11%, 55%);
+  border-radius: 10px;
+}
+.Main .section .article div {
+  width: 34%;
+  margin: 10%;
+}
+.Main .section .article div h2 {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: hsl(192, 100%, 9%);
+}
+.Main .section .article div p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  color: hsl(208, 11%, 55%);
+  line-height: 1.5;
+}
+.Main .section .article picture {
+  margin: 40px;
+}
+.Main .section #flowing {
+  flex-direction: row-reverse;
+}
+.Main .section .articleB {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  margin-bottom: -120px;
+  margin-top: 100px;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 8px hsl(208, 11%, 55%);
+  border-radius: 10px;
+  height: 200px;
+  width: 600px;
+}
+.Main .section .articleB h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: hsl(192, 100%, 9%);
+}
+.Main .section .articleB .button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 30px;
+  box-shadow: 0 1px 6px rgb(221, 219, 219);
+  padding: 1.7rem 5.2rem;
+  margin-top: -20px;
+}
+.Main .section .articleB .button:hover {
+  cursor: pointer;
+  background-color: rgb(241, 160, 216);
+}
+
+/* // Footer */
+.Footer {
+  color: white;
+  background-color: hsl(192, 100%, 9%);
+  padding: 7rem 4rem 4rem 4rem;
+}
+.Footer .Fcontenedor {
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 8rem;
+}
+.Footer .Fcontenedor .Finfo {
+  padding: 1rem 0;
+  width: 20vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.Footer .Fcontenedor .Finfo .contacto, .Footer .Fcontenedor .Finfo .redes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.Footer .Fcontenedor .Finfo .fa {
+  font-size: 0.8rem;
+  padding: 8px 9px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+.Footer .Fcontenedor .Finfo .fa-facebook {
+  padding: 8px 10px;
+  border-radius: 100px;
+}
+.Footer .Fcontenedor .Finfo .fa:hover {
+  color: hsl(322, 100%, 66%);
+  border: 2px solid hsl(322, 100%, 66%);
+}
+.Footer .Fcontenedor a {
+  font-size: 0.8rem;
+}
+.Footer .Fcontenedor a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Footer footer section {
+  text-align: right;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=styles.css.map */

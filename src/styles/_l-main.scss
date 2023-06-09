@@ -1,0 +1,91 @@
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+.Main {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .section{
+
+        @include M.Display( flex, column, center,center, 2rem);
+
+        .article{
+
+            flex: 1;
+            max-width: 1260px;
+            width: 100%;
+
+            @include M.Display( flex, row nowrap, space-between,center, 2rem);
+
+            box-shadow: 1px 1px 8px C.$secondaryColor;
+            border-radius: 10px;
+    
+            div{
+                width: 34%;
+                margin: 10%;
+
+                h2{
+                    margin-bottom: 10px;
+                    font-family: F.$headingsFont;
+                    font-weight: F.$textSemiBold;
+                    font-size: F.$textLg;
+                    color: C.$neutralColor2;
+                }
+
+                p {
+                    font-family: F.$mainFont;
+                    font-weight: F.$textLight;
+                    color: C.$secondaryColor;
+                    line-height: F.$lineHeight;
+                }
+            }
+
+            picture{
+                margin: 40px;
+            }
+        }
+
+        #flowing {
+            flex-direction: row-reverse;
+        }
+
+        .articleB{
+
+            @include M.Display( flex, column, center,center, 2rem);
+
+            position: relative;
+            margin-bottom: -120px;
+            margin-top: 100px;
+            flex-direction: column;
+
+            background-color: white;
+            box-shadow: 1px 1px 8px C.$secondaryColor;
+            border-radius: 10px;
+
+            height: 200px;
+            width: 600px;
+
+            h1{
+
+                font-family: F.$headingsFont;
+                font-weight: F.$textSemiBold;
+                font-size: F.$textLg;
+                color: C.$neutralColor2;
+            }
+
+            .button{
+                // Boton
+                @include M.Button( 1rem, 700, white, C.$primaryColor, 30px, 0 1px 6px rgb(221, 219, 219), 1.7rem 5.2rem);
+                margin-top: -20px;
+            }
+            // Boton activo
+            .button:hover{
+                cursor: pointer;
+                background-color: C.$lightPink;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+/* // Footer */
+
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+
+.Footer{
+    color: white;
+    background-color: C.$neutralColor2;
+    padding: 7rem 4rem 4rem 4rem; 
+    
+
+    & .Fcontenedor{
+        padding: 2rem 0;
+    @include M.Display( flex, row nowrap, space-around, flex-start, 8rem);
+    
+    //infos
+    & .Finfo{
+        padding: 1rem 0;
+        width: 20vw;
+
+        @include M.Display( flex, column, center, flex-start, 0.8rem);
+       
+            //Contacto y Redes
+            & .contacto, .redes{
+                @include M.Display( flex, row nowrap, center, flex-start, 0.5rem);
+            }  
+            
+            //Logos redes
+            & .fa{
+                    font-size: 0.8rem;
+                    padding: 8px 9px;
+                    border: 2px solid #ffffff;
+                    border-radius: 20px;
+                    }
+            
+            & .fa-facebook{
+                padding: 8px 10px;
+                border-radius: 100px;
+            }
+            
+
+            & .fa:hover{
+                color: C.$primaryColor;
+                border: 2px solid C.$primaryColor;
+            }
+
+            } 
+    
+            //Links
+            a{
+                font-size: F.$textXs;
+            }
+            
+            a:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        //Copy
+        & footer section{
+            text-align: right;
+            font-size: F.$textXs;
+        }
+
+    }
+    
+    

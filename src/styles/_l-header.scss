@@ -1,0 +1,35 @@
+/* // Header */
+
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+.Header{
+    background-image: url('../public/images/bg-hero-desktop.svg');
+
+    & section{
+
+        & article {
+
+            @import './c-navbar';
+        }
+    }
+    
+            .Hinfo{
+                padding: 0 3rem;
+                @include M.Display( flex, row nowrap, space-between,center, 2rem);
+                article{
+                    width: 50vw;
+                }
+
+                    // Boton
+                    .button {
+                        @include M.Button( 0.6rem, 700, white, C.$primaryColor, 15px, 0 1px 6px rgb(221, 219, 219), 0.6rem 2rem);
+                        margin-top: 1rem;
+                    }
+                    // Boton activo
+                    .button:hover{
+                        cursor: pointer;
+                        background-color: C.$lightPink;
+                    }
+            }
+}
